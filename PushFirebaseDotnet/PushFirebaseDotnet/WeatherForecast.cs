@@ -1,6 +1,6 @@
 using System;
 
-namespace pushNotificationsDotNetFirebase
+namespace PushFirebaseDotnet
 {
     public class WeatherForecast
     {
