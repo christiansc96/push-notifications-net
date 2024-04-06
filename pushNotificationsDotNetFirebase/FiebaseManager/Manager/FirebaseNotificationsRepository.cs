@@ -20,7 +20,8 @@ namespace FiebaseManager.Manager
                 {
                     defaultApp = FirebaseApp.Create(new AppOptions()
                     {
-                        Credential = GoogleCredential.FromFile(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "key.json")),
+                        Credential = GoogleCredential.FromFile(Path
+                        .Combine(AppDomain.CurrentDomain.BaseDirectory, "key.json")),
                     });
                 }
                 Console.WriteLine(defaultApp.Name);
@@ -38,7 +39,7 @@ namespace FiebaseManager.Manager
                         Notification = new Notification
                         {
                             Title = message.Notification.Title,
-                            Body = message.Notification.Title,
+                            Body = message.Notification.Body,
                         },
                         Token = device,
                     });
