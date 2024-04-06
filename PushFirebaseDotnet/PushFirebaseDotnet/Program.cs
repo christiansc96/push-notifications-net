@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace pushNotificationsDotNetFirebase
+namespace PushFirebaseDotnet
 {
     public class Program
     {

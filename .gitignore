@@ -1,2 +1,6 @@
-﻿pushNotificationsDotNetFirebase/.vs
-pushNotificationsDotNetFirebase/pushNotificationsDotNetFirebase/obj
+﻿PushFirebaseDotnet/.vs
+PushFirebaseDotnet/FiebaseManager/obj
+PushFirebaseDotnet/FiebaseManager/bin
+PushFirebaseDotnet/FiebaseManager/key.json
+PushFirebaseDotnet/PushFirebaseDotnet/bin
+PushFirebaseDotnet/PushFirebaseDotnet/obj

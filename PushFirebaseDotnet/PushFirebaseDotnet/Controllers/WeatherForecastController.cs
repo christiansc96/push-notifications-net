@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace pushNotificationsDotNetFirebase.Controllers
+namespace PushFirebaseDotnet.Controllers
 {
     [ApiController]
     [Route("[controller]")]

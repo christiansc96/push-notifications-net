@@ -1,3 +1,4 @@
+using FiebaseManager.Manager;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -12,7 +13,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace pushNotificationsDotNetFirebase
+namespace PushFirebaseDotnet
 {
     public class Startup
     {
@@ -26,11 +27,11 @@ namespace pushNotificationsDotNetFirebase
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-
+            services.AddScoped<IFirebaseNotificationsRepository, FirebaseNotificationsRepository>();
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "pushNotificationsDotNetFirebase", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "PushFirebaseDotnet", Version = "v1" });
             });
         }
 
@@ -41,7 +42,7 @@ namespace pushNotificationsDotNetFirebase
             {
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "pushNotificationsDotNetFirebase v1"));
+                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "PushFirebaseDotnet v1"));
             }
 
             app.UseHttpsRedirection();
