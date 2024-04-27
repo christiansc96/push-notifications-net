@@ -1,7 +1,6 @@
-﻿using FiebaseManager.Dto;
-using System.Threading.Tasks;
+﻿using FirebaseManager.Dto;
 
-namespace FiebaseManager.Manager
+namespace FirebaseManager.Manager
 {
     public interface IFirebaseNotificationsRepository
     {

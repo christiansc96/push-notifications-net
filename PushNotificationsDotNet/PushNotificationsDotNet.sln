@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PushNotificationsDotNet", "PushNotificationsDotNet\PushNotificationsDotNet.csproj", "{C5C51C21-D1F2-4A29-A2B5-6988D4CB2674}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FirebaseManager", "FirebaseManager\FirebaseManager.csproj", "{AF14CF55-1326-4700-9871-7CFBB47EE207}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C5C51C21-D1F2-4A29-A2B5-6988D4CB2674}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5C51C21-D1F2-4A29-A2B5-6988D4CB2674}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5C51C21-D1F2-4A29-A2B5-6988D4CB2674}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5C51C21-D1F2-4A29-A2B5-6988D4CB2674}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF14CF55-1326-4700-9871-7CFBB47EE207}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF14CF55-1326-4700-9871-7CFBB47EE207}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF14CF55-1326-4700-9871-7CFBB47EE207}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF14CF55-1326-4700-9871-7CFBB47EE207}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0DC2B481-AC97-4E68-B8A2-03C02ADC50CE}
+	EndGlobalSection
+EndGlobal

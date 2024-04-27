@@ -1,13 +1,10 @@
-﻿using FiebaseManager.Dto;
-using FirebaseAdmin;
+﻿using FirebaseAdmin;
 using FirebaseAdmin.Messaging;
+using FirebaseManager.Dto;
 using Google.Apis.Auth.OAuth2;
-using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Threading.Tasks;
 
-namespace FiebaseManager.Manager
+namespace FirebaseManager.Manager
 {
     public class FirebaseNotificationsRepository : IFirebaseNotificationsRepository
     {
@@ -16,14 +13,11 @@ namespace FiebaseManager.Manager
             try
             {
                 FirebaseApp defaultApp = FirebaseApp.DefaultInstance;
-                if (defaultApp == null)
-                {
-                    defaultApp = FirebaseApp.Create(new AppOptions()
+                string filePath = Path.Combine("..", "FirebaseManager", "key.json");
+                defaultApp ??= FirebaseApp.Create(new AppOptions()
                     {
-                        Credential = GoogleCredential.FromFile(Path
-                        .Combine(AppDomain.CurrentDomain.BaseDirectory, "key.json")),
+                        Credential = GoogleCredential.FromFile(filePath),
                     });
-                }
                 Console.WriteLine(defaultApp.Name);
 
                 FirebaseMessaging messaging = FirebaseMessaging.GetMessaging(defaultApp);
@@ -47,7 +41,7 @@ namespace FiebaseManager.Manager
                 }
                 return true;
             }
-            catch
+            catch(Exception ex)
             {
                 return false;
             }
